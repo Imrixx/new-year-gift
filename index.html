@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>For You ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="floating"></div>
+
+    <audio id="bgMusic" loop>
+        <source src="sound/_storage_emulated_0_Android_data_com.fawazapp.mp3" type="audio/mpeg">
+    </audio>
+
+    <section class="page active" id="page1">
+        <h1>🎄 Happy New Year 🎄</h1>
+        <p>I made this only for you</p>
+        <button onclick="goToPage(2)">Start ❤️</button>
+    </section>
+
+    <section class="page" id="page2">
+        <h2>Just one thing 😌</h2>
+        <input type="text" id="birthdayInput" placeholder="اكتبي تاريخ ميلادك">
+        <p id="errorMsg" class="error-text"></p>
+        <button onclick="checkBirthday()">Submit</button>
+    </section>
+
+    <section class="page" id="page3">
+        <h2>Are you really sure? 😏</h2>
+        <div class="choices">
+            <button class="run">أكيد متأكدة ❤️</button>
+            <button class="run gray">مش متأكدة 🙈</button>
+        </div>
+    </section>
+
+    <section class="page" id="page4">
+        <div class="final-container">
+            <h1 class="glow-text">✨ This is for you ✨</h1>
+
+            <div class="scroll-content">
+                <div class="gallery-large">
+                    <img src="iamge/1.jpg" alt="memory 1">
+                    <img src="iamge/2.jpg" alt="memory 2">
+                    <img src="iamge/3.jpg" alt="memory 3">
+                    <img src="iamge/4.jpg" alt="memory 4">
+                    <img src="iamge/5.jpg" alt="memory 5">
+                    <img src="iamge/6.jpg" alt="memory 6">
+                    <img src="iamge/7.jpg" alt="memory 5">
+                    <img src="iamge/8.jpg" alt="memory 6">
+                    <img src="iamge/3.jpg" alt="memory 6">
+                    <img src="iamge/4.jpg" alt="memory 5">
+                    <img src="iamge/1.jpg" alt="memory 6">
+                    <img src="iamge/2.jpg" alt="memory 2">
+                </div>
+
+                <div class="video-section">
+                    <video controls>
+                        <source src="vido/2.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="happy-banner">
+                    <span class="heart-icon">❤️</span>
+                    <span class="happy-text">Happy New Year</span>
+                    <span class="heart-icon">❤️</span>
+                </div>
+
+                <div class="message-section">
+                    <p id="typing"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
