@@ -15,7 +15,7 @@ function checkBirthday() {
     attempts++;
 
     if (attempts === 1) {
-        errorMsg.innerText = "لا لا حاولي تاني 🌚 هههه";
+        errorMsg.innerText = "لا لا حاولي تاني انتي مش بسنت لا لا 🌚 هههه";
         input.value = "";
     } else if (attempts === 2) {
         errorMsg.innerText = "خلاص حاولي آخر مرة معلش 😂 ضحكتيني";
@@ -81,3 +81,4 @@ for (let i = 0; i < 25; i++) {
     container.appendChild(s);
 
 }
+
